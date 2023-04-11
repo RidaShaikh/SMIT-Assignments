@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <button onclick="addFruits()">Add fruits</button>
+    <script>
+
+        function addFruits() {
+            let fruit = {
+                name: "Apple",
+                color: "Red",
+                price: "100Rs",
+                taste: "Sweet",
+                size: "Small"
+            };
+
+            localStorage.setItem("fruit", JSON.stringify(fruit));
+        }
+
+
+
+    </script>
+</body>
+
+</html>
